@@ -24,7 +24,7 @@ function mouseClicked(){
           MainField.MakeMove(ClickedCellY, ClickedCellX, "Circle");
           History.push("Circle: (" + ClickedCellY + ", " + ClickedCellX + ")");
           Turn = 2;
-          setTimeout(BotManagement, 100, true);
+          setTimeout(BotManagement, 100);
         }
       }
     }
@@ -54,7 +54,12 @@ function mouseClicked(){
           MainField.MakeMove(ClickedCellY, ClickedCellX, "Circle");
           History.push("Circle: (" + ClickedCellY + ", " + ClickedCellX + ")");
           Turn = 2;
-          setTimeout(BotManagement, 100, true);
+          if (Os != "IOS")
+            setTimeout(BotManagement, 100);
+          else{
+            Visualize();
+            BotManagement();
+          }
         }
       }
     }
@@ -379,7 +384,7 @@ function Restart(){
     });
   }
   if (Os != "IOS")
-    setTimeout(FirstMove, 1700, true);
+    setTimeout(FirstMove, 1700);
   else{
     Timer = frameCount;
     History.push("Cross: (" + 3 + ", " + 3 + ")");
