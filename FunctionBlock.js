@@ -370,14 +370,14 @@ function Restart(){
   History = [];
   if (Os != "IOS"){
     fullscreen(true);
+    screen.orientation.lock("portrait")
+    .then(function() {
+      console.log("Device orientation locked");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
   }
-  screen.orientation.lock("portrait")
-  .then(function() {
-    console.log("Device orientation locked");
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
   if (Os != "IOS")
     setTimeout(FirstMove, 1700);
   else{
