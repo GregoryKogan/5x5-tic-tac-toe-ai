@@ -368,7 +368,6 @@ function Restart(){
   RestartButton.html("Play again");
   MainField = new Field;
   History = [];
-  LoadModel();
   Turn = 2;
   Player2.Type = "Cross";
   Player2.EnemyType = "Circle";
@@ -391,7 +390,7 @@ function Restart(){
 }
 
 function FirstMove(){
-  Timer = frameCount;
+  //Timer = frameCount;
   MainField.MakeMove(3, 3, "Cross");
   History.push("Cross: (" + 3 + ", " + 3 + ")");
   Turn = 1;
