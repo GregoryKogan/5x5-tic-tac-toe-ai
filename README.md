@@ -20,3 +20,5 @@ The minimax algorithm considers all possible positions of the board that can be 
 So, the bot is a minimax algorithm that takes missing values from the neural network, with optimization of Alpha Beta pruning and manual protection-check against 4 cases when you need to go unambiguously.
 
 You can try this out here: https://gregorykogan.github.io/Tic-Tac-Toe-AI/
+
+(IOS devices are not supported by now)
