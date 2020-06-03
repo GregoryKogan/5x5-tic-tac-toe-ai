@@ -1,6 +1,6 @@
 # Tic-Tac-Toe-AI
 
-This is bot that is impossible to beat at 5x5 tic tac toe (I believe)
+This bot is impossible to beat at 5x5 tic tac toe (I believe)
 
 Algorthm it uses is pretty simple.
 
