@@ -1,5 +1,9 @@
 # Tic-Tac-Toe-AI
 
+<p align="center">
+  <img width="1197" alt="image" src="https://github.com/GregoryKogan/Tic-Tac-Toe-AI/assets/60318411/d61530c4-1c87-415d-98ac-080af99f1233">
+</p>
+
 This bot is impossible to beat at 5x5 tic tac toe (I believe)
 
 Algorthm it uses is pretty simple.
